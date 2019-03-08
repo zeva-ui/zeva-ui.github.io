@@ -1,0 +1,151 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    max-width:100vw;
+    overflow-x:hidden;
+    background:url("https://images.unsplash.com/photo-1537429149818-2d0e3e20857b?&w=1700&q=80") center center;
+    background-size:cover;
+    height:100vh;
+    background-attachment:fixed;
+}
+header {
+    width:96vw;
+    position:absolute;
+    z-index:9;
+    top:0;
+    padding:3vh 2vw;
+}
+header table {
+    width:100%;
+}
+header table tr td {
+    text-align:left;
+}
+header table tr td img {
+    width:40px;
+    height:auto;
+}
+nav {
+    width:100%;
+    text-align:right;
+}
+nav a {
+    color:#fff;
+    text-decoration:none;
+    margin:0px 15px;
+    font-weight:bold;
+    display:inline-block !important;
+}
+#top-part {
+    width:56.5vw;
+    padding:5vh 3.5vw;
+    padding-right:40vw;
+    padding-top:25vh;
+    height:70vh;
+    top:0;
+    color:#fff;
+    background-image:linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    transition:0.4s ease-in-out;
+}
+#top-part b {
+    font-size:130px;
+    transition:0.4s ease-in-out;
+}
+#top-part h2 {
+    font-size:26px;
+    transition:0.4s ease-in-out;
+}
+footer {
+    width:92%;
+    text-align:right;
+    padding:5vh 4%;
+    color:#fff;
+    bottom:0;
+    position:fixed;
+}
+
+#phone {
+    display:none;
+}
+#menu {
+    width:90vw;
+    padding:5vh 5vw;
+    height:90vh;
+    top:0;
+    position:fixed;
+    z-index:12;
+    background:#000;
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    color:#fff;
+    font-size:16px;
+}
+#menu a {
+    color:#fff;
+    font-size:20px;
+    font-weight:bold;
+    text-decoration:none;
+    margin:5px 0px;
+}
+
+::-webkit-scrollbar {
+    width:5px;
+    height:5px;
+}
+::-webkit-scrollbar-track {
+    background:#000; 
+}
+
+::-webkit-scrollbar-thumb {
+    background:#fff; 
+}
+@media (max-width:900px) {
+    #top-part {
+        width:90vw;
+        padding:5vh 5vw;
+        padding-right:0vw;
+        padding-top:25vh;
+        height:70vh;
+        background-image:linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+    }
+    #top-part b {
+        font-size:90px;
+    }
+    #top-part h2 {
+        font-size:20px;
+    }
+    #top-part table tr td button {
+        margin:10px 0px !important;
+        padding:12px 20px !important;
+        font-size:0.9rem;
+    }
+    footer {
+        text-align:left;
+    }
+    #notPhone {
+        display:none;
+    }
+    #phone {
+        display:inherit;
+        float:right;
+        font-size:18px;
+    }
+}
+
+@-webkit-keyframes Gradient {
+0% {background-position: 0% 50%}
+50% {background-position: 100% 50%}
+100% {background-position: 0% 50%}
+}
+@-moz-keyframes Gradient {
+0% {background-position: 0% 50%}
+50% {background-position: 100% 50%}
+100% {background-position: 0% 50%}
+}
+@keyframes Gradient {
+0% {background-position: 0% 50%}
+50% {background-position: 100% 50%}
+100% {background-position: 0% 50%}
+}

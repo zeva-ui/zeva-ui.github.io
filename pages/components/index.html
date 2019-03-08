@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="yet another minimalist ui framework">
+    <meta name="keywords" content="minimalist ui framework,ui framework, framework, css framework, new framework">
+    <meta name="author" content="imfunny & community">
+    <meta property="og:title" content="zeva.">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="yet another minimalist ui framework" />
+    <meta property="og:url" content="https://imfunniee.github.io/zeva">
+    <meta name="theme-color" content="#000">
+    <link rel="icon" href="../../assets/image/favicon.png">
+    <title>zeva</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/zeva.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert"></script>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+<body>
+        <div class="insider animated fadeIn" id="components">
+                <heading>Components</heading>
+                <p id="buttons">Buttons</p>
+                <h3>Classes Used With Button : <span>button</span>, <span>filled</span>,  <span>rounded</span>,  <span>small</span>,  <span>big</span>,  <span>danger</span>,  <span>danger-filled</span></h3>
+                <div class="sub">
+                <h3>Simple Button</h3>
+                <button class="button">simple button</button>
+                <button class="button filled">filled button</button>
+                <button class="button rounded">rounded button</button>
+                <button class="button rounded filled">rounded filled button</button>
+                <pre class="prettyprint lang-html">
+                &lt;button class="button">simple button&lt;/button>
+                &lt;button class="button filled">filled button&lt;/button>
+                &lt;button class="button rounded">rounded button&lt;/button>
+                &lt;button class="button rounded filled">rounded filled button&lt;/button>
+                </pre>
+                </div>
+                <div class="sub">
+                <h3>Button Size</h3>
+                <button class="button small">small button</button>
+                <button class="button">normal button</button>
+                <button class="button big">big button</button>
+                <pre class="prettyprint lang-html">
+                    &lt;button class="button small">small button&lt;/button>
+                    &lt;button class="button">normal button&lt;/button>
+                    &lt;button class="button big">big button&lt;/button>
+                </pre>
+                </div>
+                
+                <div class="sub">
+                <h3>Danger Button</h3>
+                <button class="button danger">danger button</button>
+                <button class="button rounded danger">danger button rounded</button>
+                <button class="button danger-filled">danger button filled</button>
+                <pre class="prettyprint lang-html">
+                        &lt;button class="button danger">danger button&lt;/button>
+                        &lt;button class="button rounded danger">danger button rounded&lt;/button>
+                        &lt;button class="button danger-filled">danger button filled&lt;/button>
+                </pre>
+                </div>
+                
+                <div class="sub">
+                <h3>Buttons with Icons</h3>
+                <button class="button">Search &nbsp; <i class="fas fa-search"></i></button>
+                <button class="button rounded filled">Download &nbsp; <i class="fas fa-download"></i></button>
+                <button class="button danger rounded"><i class="fas fa-skull-crossbones"></i> &nbsp; Danger</button>
+                <pre class="prettyprint lang-html">
+                    &lt;button class="button">Search &#38;nbsp; &lt;i class="fas fa-search">&lt;/i>&lt;/button>
+                    &lt;button class="button rounded filled">Download &#38;nbsp; &lt;i class="fas fa-download">&lt;/i>&lt;/button>
+                    &lt;button class="button danger rounded">&lt;i class="fas fa-skull-crossbones">&lt;/i> &#38;nbsp; Danger &lt;/button>
+                </pre>
+                </div>
+                
+                <p id="tables">Tables</p>
+                <h3>Classes Used With Tables : <span>table</span>, </span><span>table-right</span>,  <span>table-center</span>,  <span>table-filled</span>,  <span>table-tbody-filled</span>,  <span>table-bordered</span>,  <span>table-bordered-bottom</span>,
+                <span>table-tbody-bordered</span></h3>
+                <div class="sub">
+                <h3>Simple Table</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Age</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Elon</td>
+                        <td>Musk</td>
+                        <td>47</td>
+                        <td>South Africa, Canada, America</td>
+                    </tr>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Zuckerberg</td>
+                        <td>34</td>
+                        <td>America</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <pre class="prettyprint lang-html">
+                    &lt;table class="table">
+                        &lt;thead>
+                            &lt;tr>
+                                &lt;th>First Name&lt;/th>
+                                &lt;th>Last Name&lt;/th>
+                                &lt;th>Age&lt;/th>
+                                &lt;th>Country&lt;/th>
+                            &lt;/tr>
+                        &lt;/thead>
+                        &lt;tbody>
+                        &lt;tr>
+                            &lt;td>Elon&lt;/td>
+                            &lt;td>Musk&lt;/td>
+                            &lt;td>47&lt;/td>
+                            &lt;td>South Africa, Canada, America&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td>Mark&lt;/td>
+                            &lt;td>Zuckerberg&lt;/td>
+                            &lt;td>34&lt;/td>
+                            &lt;td>America&lt;/td>
+                        &lt;/tr>
+                        &lt;/tbody>
+                    &lt;/table>
+                </pre>
+            </div>
+            <div class="sub">
+                <h3>Filled Table with border on bottom of &lt;td> tag</h3>
+            </div>
+                <table class="table table-filled table-tbody-bordered-bottom">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Age</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Elon</td>
+                        <td>Musk</td>
+                        <td>47</td>
+                        <td>South Africa, Canada, America</td>
+                    </tr>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Zuckerberg</td>
+                        <td>34</td>
+                        <td>America</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <pre class="prettyprint lang-html">
+                    &lt;table class="table table-filled table-tbody-bordered-bottom">
+                        &lt;thead>
+                            &lt;tr>
+                                &lt;th>First Name&lt;/th>
+                                &lt;th>Last Name&lt;/th>
+                                &lt;th>Age&lt;/th>
+                                &lt;th>Country&lt;/th>
+                            &lt;/tr>
+                        &lt;/thead>
+                        &lt;tbody>
+                        &lt;tr>
+                            &lt;td>Elon&lt;/td>
+                            &lt;td>Musk&lt;/td>
+                            &lt;td>47&lt;/td>
+                            &lt;td>South Africa, Canada, America&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td>Mark&lt;/td>
+                            &lt;td>Zuckerberg&lt;/td>
+                            &lt;td>34&lt;/td>
+                            &lt;td>America&lt;/td>
+                        &lt;/tr>
+                        &lt;/tbody>
+                    &lt;/table>
+                </pre>
+                
+                <p id="forms">Forms</p>
+                <div class="sub">
+                <h3>Input Fields</h3>
+                <h3>Classes Used With Input : <span>input</span>, <span>full</span>, <span>rounded</span>, <span>bordered</span>, <span>input-filled</span></h3>
+                <input type="text" class="input" placeholder="deafult input field">
+                <input type="text" class="input" placeholder="another deafult input field">
+                <pre class="prettyprint lang-html">
+                    &lt;input type="text" class="input" placeholder="deafult input field">
+                    &lt;input type="text" class="input" placeholder="another deafult input field">
+                </pre>
+                <input type="text" class="input full" placeholder="full-width input field">
+                <input type="text" class="input full bordered" placeholder="full-width bordered input field">
+                <input type="text" class="input full bold" placeholder="full-width bold input field">
+                <input type="text" class="input full bold rounded input-filled" placeholder="full-width bold rounded filled input field">
+                <input type="text" class="input bold rounded bordered" placeholder="bold rounded bordered input field">
+                <input type="text" class="input rounded input-filled" placeholder="rounded filled input field">
+                <pre class="prettyprint lang-html">
+                    &lt;input type="text" class="input full" placeholder="full-width input field">
+                    &lt;input type="text" class="input full bordered" placeholder="full-width bordered input field">
+                    &lt;input type="text" class="input full bold" placeholder="full-width bold input field">
+                    &lt;input type="text" class="input full bold rounded input-filled" placeholder="full-width bold rounded filled input field">
+                    &lt;input type="text" class="input bold rounded bordered" placeholder="bold rounded bordered input field">
+                    &lt;input type="text" class="input rounded input-filled" placeholder="rounded filled input field">
+                </pre>
+                </div>
+
+                <div class="sub">
+                    <h3>Textarea</h3>
+                <textarea class="input" placeholder="this is a textarea"></textarea>
+                <textarea class="input full" placeholder="this is another textarea but longer"></textarea>
+                <pre class="prettyprint lang-html">
+                    &lt;textarea class="input" placeholder="this is a textarea"></textarea>
+                    &lt;textarea class="input full" placeholder="this is another textarea but longer"></textarea>
+                </pre>
+                <h5 style="color:#ffa0a0;">Tip : You can apply all the classes on a textarea applied on input field</h5>
+                </div>
+                
+
+                <div class="sub">
+                    <h3>Radio Buttons</h3>
+                <label class="label">Radio button
+                    <input type="radio" name="radio">
+                    <span class="radio"></span>
+                </label>
+                <label class="label">another radio button
+                    <input type="radio" name="radio">
+                    <span class="radio"></span>
+                </label>
+                <label class="label">disabled radio button
+                    <input type="radio" name="radio" disabled>
+                    <span class="radio"></span>
+                </label>
+                <pre class="prettyprint lang-html">
+                    &lt;label class="label">Radio button
+                        &lt;input type="radio" name="radio">
+                        &lt;span class="radio">&lt;/span>
+                    &lt;/label>
+                    &lt;label class="label">another radio button
+                        &lt;input type="radio" name="radio">
+                        &lt;span class="radio">&lt;/span>
+                    &lt;/label>
+                    &lt;label class="label">disabled radio button
+                        &lt;input type="radio" name="radio" disabled>
+                        &lt;span class="radio">&lt;/span>
+                    &lt;/label>
+                </pre>
+                </div>
+
+
+                <div class="sub">
+                    <h3>Checkboxes</h3>
+                <label class="label">A checkbox
+                    <input type="checkbox">
+                    <span class="checkbox"></span>
+                </label>
+                <label class="label">Another checkbox but checked
+                    <input type="checkbox" checked>
+                    <span class="checkbox"></span>
+                </label>
+                <label class="label">Disabled checkbox
+                    <input type="checkbox" disabled>
+                    <span class="checkbox"></span>
+                </label>
+                <pre class="prettyprint lang-html">
+                    &lt;label class="label">A checkbox
+                            &lt;input type="checkbox">
+                            &lt;span class="checkbox">&lt;/span>
+                        &lt;/label>
+                        &lt;label class="label">Another checkbox but checked
+                            &lt;input type="checkbox" checked>
+                            &lt;span class="checkbox">&lt;/span>
+                    &lt;/label>
+                    &lt;label class="label">Disabled checkbox
+                            &lt;input type="checkbox" disabled>
+                            &lt;span class="checkbox">&lt;/span>
+                    &lt;/label>
+                </pre>
+                </div>
+                
+                <div class="sub">
+                <h3>Select</h3>
+                <select class="input bold">
+                    <option>option one</option>
+                    <option>option two</option>
+                    <option>option three</option>
+                    <option>option foour</option>
+                </select>
+                <select class="input bold select-full">
+                    <option>option one</option>
+                    <option>option two</option>
+                    <option>option three</option>
+                    <option>option foour</option>
+                </select>
+                <pre class="prettyprint lang-html">
+                    &lt;select class="input bold">
+                       &lt;option>option one&lt;/option>
+                       &lt;option>option two&lt;/option>
+                       &lt;option>option three&lt;/option>
+                       &lt;option>option foour&lt;/option>
+                    &lt;/select>
+
+                    &lt;select class="input bold select-full">
+                       &lt;option>option one&lt;/option>
+                       &lt;option>option two&lt;/option>
+                       &lt;option>option three&lt;option>
+                       &lt;option>option foour&lt;/option>
+                    &lt;/select>
+                </pre>
+                </div>
+
+                <div class="sub">
+                <h3>more components coming soon...</h3>
+                </div>
+    </div>
+</body>
+</html>

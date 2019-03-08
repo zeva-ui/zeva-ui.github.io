@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="yet another minimalist ui framework">
+    <meta name="keywords" content="minimalist ui framework,ui framework, framework, css framework, new framework">
+    <meta name="author" content="imfunny & community">
+    <meta property="og:title" content="zeva.">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="yet another minimalist ui framework" />
+    <meta property="og:url" content="https://imfunniee.github.io/zeva">
+    <meta name="theme-color" content="#000">
+    <link rel="icon" href="../../assets/image/favicon.png">
+    <title>zeva</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/zeva.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=desert"></script>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+</head>
+<body>
+    <div id="start" class="insider animated fadeIn">
+        <heading>getting started</heading>
+        <p id="introduction">
+                Introduction
+        </p>
+        <h3>Get started with zeva, a modern and minimalist framework for building responsive and modern Frontends. Below are different ways of using zeva on your project</h3>
+        <div class="box">
+            <h2>Download the zip file</h2>
+            <a href="https://github.com/zeva-ui/zeva/archive/master.zip">
+                <button class="button rounded bold">Download v1.0.0</button>
+            </a>
+            <h2>or clone it</h2>
+            <pre class="prettyprint lang-html">git clone https://github.com/zeva-ui/zeva.git
+            </pre>
+        </div>
+        <div class="box">
+            <h2>CDN</h2>
+            <h3>Dark theme</h3>
+            <pre class="prettyprint lang-html">https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/zeva.css
+            </pre>
+            <pre class="prettyprint lang-html">https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/zeva.min.css
+            </pre>
+            <h3>Light theme</h3>
+            <pre class="prettyprint lang-html">https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/zeva-inverse.css
+            </pre>
+            <pre class="prettyprint lang-html">https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/zeva-inverse.min.css
+            </pre>
+        </div>
+        <div class="box">
+            <h2>NPM</h2>
+            <pre class="prettyprint lang-plain">npm i zeva (coming soon)
+            </pre>
+        </div>
+        <div class="box">
+            <h2>Yarn</h2>
+            <pre class="prettyprint lang-plain">yarn add zeva (coming soon)
+            </pre>
+        </div>
+        <div class="box">
+            <h2>Bower</h2>
+            <pre class="prettyprint lang-plain">bower install zeva (coming soon)
+            </pre>
+        </div>
+        <p id="content">
+            Content
+        </p>
+        <h3>Within the downloaded file you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations</h3>
+            <pre class="prettyprint lang-plain">
+                zeva/
+                └── dist/
+                    └── css/
+                        ├── zeva-inverse.css
+                        ├── zeva-inverse.css.map
+                        ├── zeva-inverse.min.css
+                        ├── zeva-inverse.min.css.map
+                        ├── zeva.css
+                        ├── zeva.css.map
+                        ├── zeva.min.css
+                        └── zeva.min.css.map
+            </pre>
+        <p id="responsive">Responsive</p>
+        <div class="box">
+        <h2>Include this &lt;meta> tag inside &lt; before stylesheet link to ensure proper rendering and touch zooming for all devices.</h2>
+        <pre class="prettyprint lang-html">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </pre>
+        </div>
+        <p id="usage">
+            Usage
+        </p>
+        <div class="box">
+            <h2>CDN Usage</h2>
+            <h4>Include the stylesheet &lt;link> inside &lt;head>, same for other cdn links too</h4>
+            <pre class="prettyprint lang-html">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.css">
+            </pre>
+
+            <h2>Zip Usage: CSS files</h2>
+            <h4><ul>
+                <li>Unzip the files</li>
+                <li>Go to dist/css/</li>
+                <li>Import/Copy either the regular or minified CSS file to your working directory</li>
+            </ul>
+            </h4>
+            <pre class="prettyprint lang-html">&lt;link rel="stylesheet" href="./dist/css/zeva.css">
+            </pre>
+
+            <h2>Include this for using icons</h2>
+            <h4>Icons provided by fontawesome</h4>
+            <pre class="prettyprint lang-html">&lt;link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+            </pre>
+        </div>
+    </div>
+</body>
+</html>

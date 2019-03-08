@@ -1,0 +1,253 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    max-width:100vw;
+    overflow-x:hidden;
+    background:#000;
+    background-size:cover;
+    height:100vh;
+    background-position:fixed;
+}
+header {
+    width:96vw;
+    z-index:9;
+    top:0;
+    padding:3vh 2vw;
+}
+header table {
+    width:100%;
+}
+header table tr td {
+    text-align:left;
+}
+header table tr td img {
+    width:40px;
+    height:auto;
+}
+nav {
+    width:100%;
+    text-align:right;
+}
+nav a {
+    color:#fff;
+    text-decoration:none;
+    margin:0px 15px;
+    font-weight:bold;
+    display:inline-block !important;
+}
+#left_panel {
+    width:12vw;
+    height:68vh;
+    position:fixed;
+    left:0;
+    bottom:0;
+    padding:4vh 4vw;
+    border-right:2px solid rgb(20, 20, 20);
+    margin-bottom:4vh;
+}
+#left_panel b:hover {
+    cursor: pointer;
+}
+#left_panel li:hover {
+    cursor: pointer;
+}
+#left_panel li {
+    list-style-type: none;
+    margin-top:5px;
+    font-weight:bold;
+    color:#ccc;
+}
+#right_panel {
+    width:78vw;
+    height:84vh;
+    position:fixed;
+    right:0;
+    bottom:0;
+    max-height:100vh;
+    overflow-y:scroll;
+    padding:0px 0vw;
+    border:0px;
+}
+.insider {
+    width:90%;
+    padding:2vh 5%;
+    color:#fff;
+    max-width:100vw;
+    overflow: hidden;
+}
+.insider a {
+    color:#fff;
+}
+.insider heading {
+    font-size:70px;
+    background:url("https://images.unsplash.com/photo-1537429149818-2d0e3e20857b?&w=1000&q=80") center center;
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    background-size:400% 400% !important;
+    font-weight:bold;
+}
+.insider p {
+    font-size:40px;
+    font-weight:bold;
+    padding-top:6vh !important;
+}
+.insider pre {
+    width:85%;
+    background:rgb(20, 20, 20);
+    border:0px !important;
+    font-family: inherit;
+    border-radius:5px;
+    padding:0px 20px;
+    word-wrap: wrap break-word;
+    padding-top:3vh !important;
+    margin:6vh 0px !important;
+    font-size:16px;
+    font-weight:bold;
+    max-width:85%;
+    overflow-x: auto;
+}
+.insider h3 a {
+    color:#fff;
+}
+.insider h3 span {
+    color:#ffa0a0;
+}
+.sub {
+    padding:4vh 0px !important;
+}
+.box {
+    width:100%;
+    padding:2% 0px;
+    margin:1vh 0px;
+    word-wrap:break-word;
+}
+footer {
+    width:100%;
+    text-align:center;
+    padding:2vh 0px;
+    padding-top:8vh;
+    color:#fff;
+}
+#phone {
+    display:none;
+}
+#menu {
+    width:90vw;
+    padding:5vh 5vw;
+    height:90vh;
+    top:0;
+    position:fixed;
+    z-index:9;
+    background:#000;
+    display:none;
+    flex-direction:column;
+    color:#fff;
+    font-size:16px;
+    max-height:100vh;
+    overflow:auto;
+}
+#menu a {
+    color:#fff;
+    font-size:18px;
+    font-weight:bold;
+    text-decoration:none;
+    margin:5px 0px;
+}
+#menu li {
+    list-style-type: none;
+    margin-top:0px;
+    color:#ccc;
+}
+#list {
+    padding:2vh 5vw;
+    border-left:3px solid #fff;
+    margin:2vh 0px;
+}
+
+::-webkit-scrollbar {
+    width:5px;
+    height:5px;
+}
+::-webkit-scrollbar-track {
+    background:#000; 
+}
+::-webkit-scrollbar-thumb {
+    background:#fff; 
+}
+
+@media (max-width:900px) {
+    .insider heading {
+        font-size:38px;
+    }
+    .insider {
+        width:90vw;
+        padding:4vh 5vw;
+    }
+    .insider p {
+        font-size:24px;
+        margin:4vh 0px !important;
+    }
+    .box {
+        width:90%;
+        padding:2% 3%;
+        margin:1vh 0px;
+    }
+    #left_panel {
+        width:80vw;
+        height:68vh;
+        position:relative;
+        left:0;
+        padding:4vh 10vw;
+        border-right:2px solid rgb(20, 20, 20);
+        margin-bottom:4vh;
+        display:none;
+    }
+    #right_panel {
+        width:100vw;
+        height:83vh;
+        position:relative;
+        max-height:83vh;
+        padding:0px 0px;
+    }
+    .insider pre {
+        width:90%;
+        max-width:90%;
+        font-size:12px;
+    }
+    .insider p {
+        font-size:22px;
+        padding-top:3vh !important;
+    }
+    .insider h3 {
+        font-size:16px;
+    }
+    .box h2 {
+        font-size:18px;
+    }
+    #notPhone {
+        display:none;
+    }
+    #phone {
+        display:inherit;
+        float:right;
+        font-size:18px;
+    }
+}
+
+@-webkit-keyframes Gradient {
+0% {background-position: 0% 50%}
+50% {background-position: 100% 50%}
+100% {background-position: 0% 50%}
+}
+@-moz-keyframes Gradient {
+0% {background-position: 0% 50%}
+50% {background-position: 100% 50%}
+100% {background-position: 0% 50%}
+}
+@keyframes Gradient {
+0% {background-position: 0% 50%}
+50% {background-position: 100% 50%}
+100% {background-position: 0% 50%}
+}
