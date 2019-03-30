@@ -32,7 +32,7 @@
         <div class="box">
             <h2>Download the zip file</h2>
             <a href="https://github.com/zeva-ui/zeva/archive/master.zip">
-                <button class="button rounded bold">Download v1.0.0</button>
+                <button class="button h-border-pill h-weight-bold">Download v1.0.0</button>
             </a>
             <h2>or clone it</h2>
             <pre class="prettyprint lang-html">git clone https://github.com/zeva-ui/zeva.git
@@ -40,15 +40,10 @@
         </div>
         <div class="box">
             <h2>CDN</h2>
-            <h3>Dark theme</h3>
+            <h3>CSS</h3>
             <pre class="prettyprint lang-html">https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/zeva.css
             </pre>
             <pre class="prettyprint lang-html">https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/zeva.min.css
-            </pre>
-            <h3>Light theme</h3>
-            <pre class="prettyprint lang-html">https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/zeva-inverse.css
-            </pre>
-            <pre class="prettyprint lang-html">https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/zeva-inverse.min.css
             </pre>
         </div>
         <div class="box">
@@ -74,18 +69,29 @@
                 zeva/
                 └── dist/
                     └── css/
-                        ├── zeva-inverse.css
-                        ├── zeva-inverse.css.map
-                        ├── zeva-inverse.min.css
-                        ├── zeva-inverse.min.css.map
                         ├── zeva.css
                         ├── zeva.css.map
                         ├── zeva.min.css
                         └── zeva.min.css.map
+                        └── js/
+                        └── index.min.js
             </pre>
+            <p id="Theming">
+                    Theming
+                </p>
+                <h3>Zeva Theming helps you Customize Zeva for changing the overall look of your Project.</h3>
+                <h3>Light Theme</h3>
+                <pre class="prettyprint lang-html">
+                    &lt;body class="body-light">
+                </pre>
+                <h3>Custom Theme</h3>
+                <pre class="prettyprint lang-html">
+                    &lt;body class="body --bg-{your background color here} --text-{your main text color here}">
+                </pre>
+                <h5>Referece to <a href="#usage">Usage</a> for using Theming</h5>
         <p id="responsive">Responsive</p>
         <div class="box">
-        <h2>Include this &lt;meta> tag inside &lt; before stylesheet link to ensure proper rendering and touch zooming for all devices.</h2>
+        <h2>Include this &lt;meta> tag inside &lt;head> before stylesheet link to ensure proper rendering and touch zooming for all devices.</h2>
         <pre class="prettyprint lang-html">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
         </pre>
         </div>
@@ -95,7 +101,7 @@
         <div class="box">
             <h2>CDN Usage</h2>
             <h4>Include the stylesheet &lt;link> inside &lt;head>, same for other cdn links too</h4>
-            <pre class="prettyprint lang-html">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.css">
+            <pre class="prettyprint lang-html">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/css/index.min.css">
             </pre>
 
             <h2>Zip Usage: CSS files</h2>
@@ -105,7 +111,22 @@
                 <li>Import/Copy either the regular or minified CSS file to your working directory</li>
             </ul>
             </h4>
-            <pre class="prettyprint lang-html">&lt;link rel="stylesheet" href="./dist/css/zeva.css">
+            <pre class="prettyprint lang-html">&lt;link rel="stylesheet" href="zeva.css">
+            </pre>
+
+            <h2>Zip Usage: JS file</h2>
+            <h4><ul>
+                <li>Unzip the files</li>
+                <li>Go to dist/js/</li>
+                <li>Import/Copy the minified js file to your working directory</li>
+            </ul>
+            </h4>
+            <pre class="prettyprint lang-html">&lt;script type="text/javascript" src="index.min.js">&lt;/script>
+            </pre>
+
+            <h2>Theming Usage</h2>
+            <h4>Include the script &lt;script> tag after all the content inside &lt;body></h4>
+            <pre class="prettyprint lang-html">&lt;script type="text/javascript" src="https://cdn.jsdelivr.net/gh/zeva-ui/zeva/dist/js/index.min.js">&lt;/script>
             </pre>
 
             <h2>Include this for using icons</h2>

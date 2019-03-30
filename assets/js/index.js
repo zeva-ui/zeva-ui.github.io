@@ -33,6 +33,9 @@ $("#panel_li_responsive").click(function(){
 $("#panel_li_usage").click(function(){
     $("#right_panel").attr("src","../pages/start/index.html#usage");
 });
+$("#panel_li_theming").click(function(){
+    $("#right_panel").attr("src","../pages/start/index.html#Theming");
+});
 
 //styling
 $("#panel_styling").click(function(){
@@ -61,6 +64,9 @@ $("#panel_li_tables").click(function(){
 $("#panel_li_forms").click(function(){
     $("#right_panel").attr("src","../pages/components/index.html#forms");
 });
+$("#panel_li_helpers").click(function(){
+    $("#right_panel").attr("src","../pages/components/index.html#helpers");
+});
 
 //Contributing
 $("#panel_contributing").click(function(){
@@ -87,6 +93,10 @@ $("#panel_li_responsive_alt").click(function(){
 });
 $("#panel_li_usage_alt").click(function(){
     $("#right_panel").attr("src","../pages/start/index.html#usage");
+    hideMenu();
+});
+$("#panel_li_theming_alt").click(function(){
+    $("#right_panel").attr("src","../pages/start/index.html#Theming");
     hideMenu();
 });
 
@@ -123,6 +133,10 @@ $("#panel_li_tables_alt").click(function(){
 });
 $("#panel_li_forms_alt").click(function(){
     $("#right_panel").attr("src","../pages/components/index.html#forms");
+    hideMenu();
+});
+$("#panel_li_helpers_alt").click(function(){
+    $("#right_panel").attr("src","../pages/components/index.html#helpers");
     hideMenu();
 });
 

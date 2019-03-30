@@ -25,60 +25,67 @@
 <body>
         <div class="insider animated fadeIn" id="components">
                 <heading>Components</heading>
+                <p id="helpers">Helpers</p>
+                <h3>Helpers make it easy to customize components as per your needs. Helpers can be used with mostly all components. The 'h' prefix, in the class names of helpers, means 'helper'.</h3>
+                <h3><span>.h-border-all</span> - Creates a border around a component</h3>
+                <h3><span>.h-border-pill</span> - Used for rounded borders</h3>
+                <h3><span>.h-border-bottom</span> - Creates a border but only on bottom</h3>
+                <h3><span>.h-display-block</span> - Displays a component as a block element (like &lt;p>).</h3>
+                <h3><span>.h-text-right</span> - Aligns the text to right</h3>
+                <h3><span>.h-text-center</span> - Aligns the text to Center</h3>
+                <h3><span>.h-width-full</span> - Sets a component width to 100% of it's parent</h3>
+                <h3><span>.h-weight-bold</span> - Changes font weight to bold</h3>
                 <p id="buttons">Buttons</p>
-                <h3>Classes Used With Button : <span>button</span>, <span>filled</span>,  <span>rounded</span>,  <span>small</span>,  <span>big</span>,  <span>danger</span>,  <span>danger-filled</span></h3>
                 <div class="sub">
                 <h3>Simple Button</h3>
                 <button class="button">simple button</button>
-                <button class="button filled">filled button</button>
-                <button class="button rounded">rounded button</button>
-                <button class="button rounded filled">rounded filled button</button>
+                <button class="button button--filled">filled button</button>
+                <button class="button h-border-pill">rounded button</button>
+                <button class="button h-border-pill button--filled">rounded filled button</button>
                 <pre class="prettyprint lang-html">
                 &lt;button class="button">simple button&lt;/button>
-                &lt;button class="button filled">filled button&lt;/button>
-                &lt;button class="button rounded">rounded button&lt;/button>
-                &lt;button class="button rounded filled">rounded filled button&lt;/button>
+                &lt;button class="button button--filled">filled button&lt;/button>
+                &lt;button class="button h-border-pill">rounded button&lt;/button>
+                &lt;button class="button h-border-pill button--filled">rounded filled button&lt;/button>
                 </pre>
                 </div>
                 <div class="sub">
                 <h3>Button Size</h3>
-                <button class="button small">small button</button>
+                <button class="button -size-small">small button</button>
                 <button class="button">normal button</button>
-                <button class="button big">big button</button>
+                <button class="button -size-large">large button</button>
                 <pre class="prettyprint lang-html">
-                    &lt;button class="button small">small button&lt;/button>
+                    &lt;button class="button -size-small">small button&lt;/button>
                     &lt;button class="button">normal button&lt;/button>
-                    &lt;button class="button big">big button&lt;/button>
+                    &lt;button class="button -size-large">large button&lt;/button>
                 </pre>
                 </div>
                 
                 <div class="sub">
-                <h3>Danger Button</h3>
-                <button class="button danger">danger button</button>
-                <button class="button rounded danger">danger button rounded</button>
-                <button class="button danger-filled">danger button filled</button>
+                <h3>Button Theme</h3>
+                <button class="button -theme-danger">danger button</button>
+                <button class="button -theme-warn h-border-pill">danger button rounded</button>
+                <button class="button button--filled -theme-sucess">danger button filled</button>
                 <pre class="prettyprint lang-html">
-                        &lt;button class="button danger">danger button&lt;/button>
-                        &lt;button class="button rounded danger">danger button rounded&lt;/button>
-                        &lt;button class="button danger-filled">danger button filled&lt;/button>
+                        &lt;button class="button -theme-danger">danger button&lt;/button>
+                        &lt;button class="button -theme-warn h-border-pill">warn button rounded&lt;/button>
+                        &lt;button class="button button--filled -theme-sucess">sucess button filled&lt;/button>
                 </pre>
                 </div>
                 
                 <div class="sub">
                 <h3>Buttons with Icons</h3>
                 <button class="button">Search &nbsp; <i class="fas fa-search"></i></button>
-                <button class="button rounded filled">Download &nbsp; <i class="fas fa-download"></i></button>
-                <button class="button danger rounded"><i class="fas fa-skull-crossbones"></i> &nbsp; Danger</button>
+                <button class="button -h-border-pill button--filled">Download &nbsp; <i class="fas fa-download"></i></button>
+                <button class="button -theme-danger -h-border-pill"><i class="fas fa-skull-crossbones"></i> &nbsp; Danger</button>
                 <pre class="prettyprint lang-html">
                     &lt;button class="button">Search &#38;nbsp; &lt;i class="fas fa-search">&lt;/i>&lt;/button>
-                    &lt;button class="button rounded filled">Download &#38;nbsp; &lt;i class="fas fa-download">&lt;/i>&lt;/button>
-                    &lt;button class="button danger rounded">&lt;i class="fas fa-skull-crossbones">&lt;/i> &#38;nbsp; Danger &lt;/button>
+                    &lt;button class="button -h-border-pill button--filled">Download &#38;nbsp; &lt;i class="fas fa-download">&lt;/i>&lt;/button>
+                    &lt;button class="button -theme-danger -h-border-pill">&lt;i class="fas fa-skull-crossbones">&lt;/i> &#38;nbsp; Danger &lt;/button>
                 </pre>
                 </div>
                 
                 <p id="tables">Tables</p>
-                <h3>Classes Used With Tables : <span>table</span>, </span><span>table-right</span>,  <span>table-center</span>,  <span>table-filled</span>,  <span>table-tbody-filled</span>,  <span>table-bordered</span>,  <span>table-bordered-bottom</span>,
-                <span>table-tbody-bordered</span></h3>
                 <div class="sub">
                 <h3>Simple Table</h3>
                 <table class="table">
@@ -135,8 +142,8 @@
             <div class="sub">
                 <h3>Filled Table with border on bottom of &lt;td> tag</h3>
             </div>
-                <table class="table table-filled table-tbody-bordered-bottom">
-                    <thead>
+                <table class="table">
+                    <thead class="table__head--filled">
                         <tr>
                             <th>First Name</th>
                             <th>Last Name</th>
@@ -160,8 +167,8 @@
                     </tbody>
                 </table>
                 <pre class="prettyprint lang-html">
-                    &lt;table class="table table-filled table-tbody-bordered-bottom">
-                        &lt;thead>
+                    &lt;table class="table">
+                        &lt;thead class="table__head--filled">
                             &lt;tr>
                                 &lt;th>First Name&lt;/th>
                                 &lt;th>Last Name&lt;/th>
@@ -189,36 +196,35 @@
                 <p id="forms">Forms</p>
                 <div class="sub">
                 <h3>Input Fields</h3>
-                <h3>Classes Used With Input : <span>input</span>, <span>full</span>, <span>rounded</span>, <span>bordered</span>, <span>input-filled</span></h3>
                 <input type="text" class="input" placeholder="deafult input field">
                 <input type="text" class="input" placeholder="another deafult input field">
                 <pre class="prettyprint lang-html">
                     &lt;input type="text" class="input" placeholder="deafult input field">
                     &lt;input type="text" class="input" placeholder="another deafult input field">
                 </pre>
-                <input type="text" class="input full" placeholder="full-width input field">
-                <input type="text" class="input full bordered" placeholder="full-width bordered input field">
-                <input type="text" class="input full bold" placeholder="full-width bold input field">
-                <input type="text" class="input full bold rounded input-filled" placeholder="full-width bold rounded filled input field">
-                <input type="text" class="input bold rounded bordered" placeholder="bold rounded bordered input field">
-                <input type="text" class="input rounded input-filled" placeholder="rounded filled input field">
+                <input type="text" class="input h-width-full" placeholder="full-width input field">
+                <input type="text" class="input h-width-full h-border-all" placeholder="full-width bordered input field">
+                <input type="text" class="input h-width-full h-weight-bold" placeholder="full-width bold input field">
+                <input type="text" class="input h-width-full h-weight-bold h-border-pill input--filled" placeholder="full-width bold rounded filled input field">
+                <input type="text" class="input h-weight-bold h-border-pill h-border-all" placeholder="bold rounded bordered input field">
+                <input type="text" class="input h-border-pill input--filled" placeholder="rounded filled input field">
                 <pre class="prettyprint lang-html">
-                    &lt;input type="text" class="input full" placeholder="full-width input field">
-                    &lt;input type="text" class="input full bordered" placeholder="full-width bordered input field">
-                    &lt;input type="text" class="input full bold" placeholder="full-width bold input field">
-                    &lt;input type="text" class="input full bold rounded input-filled" placeholder="full-width bold rounded filled input field">
-                    &lt;input type="text" class="input bold rounded bordered" placeholder="bold rounded bordered input field">
-                    &lt;input type="text" class="input rounded input-filled" placeholder="rounded filled input field">
+                    &lt;input type="text" class="input h-width-full" placeholder="full-width input field">
+                    &lt;input type="text" class="input h-width-full h-border-all" placeholder="full-width bordered input field">
+                    &lt;input type="text" class="input h-width-full h-weight-bold" placeholder="full-width bold input field">
+                    &lt;input type="text" class="input h-width-full h-weight-bold h-border-pill input--filled" placeholder="full-width bold rounded filled input field">
+                    &lt;input type="text" class="input h-weight-bold h-border-pill h-border-all" placeholder="bold rounded bordered input field">
+                    &lt;input type="text" class="input h-border-pill input--filled" placeholder="rounded filled input field">
                 </pre>
                 </div>
 
                 <div class="sub">
                     <h3>Textarea</h3>
                 <textarea class="input" placeholder="this is a textarea"></textarea>
-                <textarea class="input full" placeholder="this is another textarea but longer"></textarea>
+                <textarea class="input h-width-full" placeholder="this is another textarea but longer"></textarea>
                 <pre class="prettyprint lang-html">
                     &lt;textarea class="input" placeholder="this is a textarea"></textarea>
-                    &lt;textarea class="input full" placeholder="this is another textarea but longer"></textarea>
+                    &lt;textarea class="input h-width-full" placeholder="this is another textarea but longer"></textarea>
                 </pre>
                 <h5 style="color:#ffa0a0;">Tip : You can apply all the classes on a textarea applied on input field</h5>
                 </div>
@@ -226,18 +232,20 @@
 
                 <div class="sub">
                     <h3>Radio Buttons</h3>
-                <label class="label">Radio button
-                    <input type="radio" name="radio">
-                    <span class="radio"></span>
-                </label>
-                <label class="label">another radio button
-                    <input type="radio" name="radio">
-                    <span class="radio"></span>
-                </label>
-                <label class="label">disabled radio button
-                    <input type="radio" name="radio" disabled>
-                    <span class="radio"></span>
-                </label>
+                    <label class="label">Radio button
+                        <input type="radio" name="radio">
+                        <span class="radio"></span>
+                    </label>
+                    
+                    <label class="label">another radio button but checked
+                        <input type="radio" name="radio" checked>
+                        <span class="radio"></span>
+                    </label>
+            
+                    <label class="label">disabled radio button
+                        <input type="radio" name="radio" disabled>
+                        <span class="radio"></span>
+                    </label>
                 <pre class="prettyprint lang-html">
                     &lt;label class="label">Radio button
                         &lt;input type="radio" name="radio">
@@ -287,27 +295,27 @@
                 
                 <div class="sub">
                 <h3>Select</h3>
-                <select class="input bold">
+                <select class="input h-weight-bold">
                     <option>option one</option>
                     <option>option two</option>
                     <option>option three</option>
                     <option>option foour</option>
                 </select>
-                <select class="input bold select-full">
+                <select class="input h-weight-bold h-width-full">
                     <option>option one</option>
                     <option>option two</option>
                     <option>option three</option>
                     <option>option foour</option>
                 </select>
                 <pre class="prettyprint lang-html">
-                    &lt;select class="input bold">
+                    &lt;select class="input h-weight-bold">
                        &lt;option>option one&lt;/option>
                        &lt;option>option two&lt;/option>
                        &lt;option>option three&lt;/option>
                        &lt;option>option foour&lt;/option>
                     &lt;/select>
 
-                    &lt;select class="input bold select-full">
+                    &lt;select class="input h-weight-bold h-width-full">
                        &lt;option>option one&lt;/option>
                        &lt;option>option two&lt;/option>
                        &lt;option>option three&lt;option>
